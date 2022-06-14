@@ -136,9 +136,9 @@ These values have been retrieved from 1.19 NMS source code, and so may not be up
 
 <a name="3">[3](#3)</a>: This is a lie. The actual myOffset is `0.1000000014901161`.
 
-<a name="4">[4](#4)</a>: If the shulker not riding a boat or minecart, the myOffset is `0.0`. If the shulker is riding a boat, the myOffset is `0.1875 - boat.passengerOffset`. If the shulker is riding a minecart, the myOffset is `0.1875 - minecart.passengerOffset`.
+<a name="4">[4](#4)</a>: If the shulker is not riding a boat or minecart, the myOffset is `0.0`. If the shulker is riding a boat, the myOffset is `0.1875 - boat.passengerOffset`. If the shulker is riding a minecart, the myOffset is `0.1875 - minecart.passengerOffset`.
 
-<a name="5">[5](#5)</a>: Although slimes still follow the `default` rule for passengerOffset, their height can obviously be changed. The actual passengerOffset equals `slime.getSize() * 0.51 * 0.75`.
+<a name="5">[5](#5)</a>: Although slimes still follow the `default` rule for passengerOffset, their height can obviously be changed. The actual passengerOffset is `slime.getSize() * 0.51 * 0.75`.
 
 <a name="6">[6](#6)</a>: The passengerOffset seems to be based off the strider's current animation. If you can explain how this works, let me know. The relevant code is as follows: 
 ```    
