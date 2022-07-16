@@ -2,7 +2,9 @@
 
 ## Explanation
 
-When an entity rides another in Minecraft, the rider sits a certain, undocumented distance above the mount. This table will help you to figure out what that exact amount is. To get the height of the rider, simply do `mount.getY() + rider.myOffset + mount.passengerOffset`. Greater explanation can be found here. (to be added)
+When an entity rides another in Minecraft, the rider sits a certain, undocumented distance above the mount. This table will help you to figure out what that exact amount is. To get the height of the rider, simply do `mount.getY() + rider.myOffset + mount.passengerOffset`.
+
+As of 1.19, passenger height is calculated client-side; overriding an entity's offsets does nothing. The only current options for changing an entity's passenger height are to either continously teleport an entity to the player's location (± some custom y offset), or to have multiple invisible, invincible, silent entities riding each other.
 
 These values have been retrieved from 1.19 NMS source code, and so may not be up-to-date with newer versions.
 
